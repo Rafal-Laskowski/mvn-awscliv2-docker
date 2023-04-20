@@ -14,7 +14,7 @@ RUN curl -fsSL https://archive.apache.org/dist/maven/maven-3/${MAVEN_VERSION}/bi
     ln -s ${MAVEN_HOME}/bin/mvn /usr/local/bin/mvn
 
 ENV M2_HOME=${MAVEN_HOME}
-ENV MAVEN_OPTS="-Xmx1024m -XX:MaxPermSize=512m"
+ENV MAVEN_OPTS="-Xmx1024m"
 ENV PATH=${MAVEN_HOME}/bin:${PATH}
 
 # Install AWS CLI v2
