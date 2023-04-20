@@ -22,3 +22,8 @@ RUN curl -fsSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "aw
     unzip awscliv2.zip && \
     ./aws/install && \
     rm -rf awscliv2.zip aws
+
+# Install JQ
+RUN apt-get update \
+    && apt-get install -y jq \
+    && apt-get clean
