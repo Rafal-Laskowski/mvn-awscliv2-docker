@@ -1,2 +1,3 @@
-# mvn-awscliv2-docker
-Maven + AWS CLI v2
+docker build --tag fenio/mvn-awscliv2 .
+docker login -u="${DOCKER_USERNAME}" -p="${DOCKER_PASSWORD}"
+docker push fenio/mvn-awscliv2
